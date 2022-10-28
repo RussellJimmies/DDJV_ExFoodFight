@@ -58,10 +58,15 @@ public class Dragging : MonoBehaviour
 		if (m_TargetJoint)
 		{
 			m_TargetJoint.target = worldPos;
+			m_TargetJoint.breakForce = 250.0f;
 
 			// Draw the line between the target and the joint anchor.
 			if (m_DrawDragLine)
 				Debug.DrawLine(m_TargetJoint.transform.TransformPoint(m_TargetJoint.anchor), worldPos, m_Color);
 		}
+
+
 	}
+
+
 }
