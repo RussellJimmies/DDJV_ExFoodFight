@@ -26,22 +26,7 @@ public class SpawnFood : MonoBehaviour
     void FixedUpdate()
     {
 
-        /*
-        accumulateurTemps += Time.fixedDeltaTime; //Ajoute 1/30 de sec
 
-        if (accumulateurTemps > temps)
-        {
-            //Line explanation 43:00
-            // make a boulet, at the position of Source, no rotation
-            float largeur = Random.Range(-limite, limite);
-            Vector3 delta = new Vector3(largeur, 0.0f, 0.0f);
-            GameObject vilain = Instantiate(bouffe, transform.position + delta, Quaternion.identity);
-            //vilain.transform.Rotate(new Vector3(0.0f, 0.0f, 1.0f), 90.0f); //Essieu de la rotation est un vecteur qui sort de l'écran
-            accumulateurTemps = 0.0f;
-            float ratio = (Time.time + 5.0f) / 5.0f; //Au temps 0 du jeu
-            temps = Random.Range(1.0f,  4.0f);
-        }
-        */
     }
 
     public IEnumerator CSpawnFood()
