@@ -26,9 +26,10 @@ public class DropFood : MonoBehaviour
         
         tj = GameObject.Find("Dragger").GetComponent<Dragging>().m_TargetJoint;
         //Debug.Log(tj == null);
-        //Debug.Log("Yeehaw");
+        Debug.Log("Yeehaw");
         if (tj != null)
         {
+            
             Destroy(tj);
             tj = null;
         }
