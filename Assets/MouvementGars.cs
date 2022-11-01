@@ -50,5 +50,12 @@ public class MouvementGars : MonoBehaviour
         {
             SceneManager.LoadScene("Niveau1");
         }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Food"))
+        {
+            Debug.Log("DIN DENTS");
+            rig.AddForce(new Vector2(6.0f, 0.0f), ForceMode2D.Impulse);
+        }
+
     }
 }
